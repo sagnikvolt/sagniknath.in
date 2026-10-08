@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sagnik Kumar Nath · Electrical Engineer</title>
+<meta name="description" content="Sagnik Kumar Nath: Electrical Engineer (B.Tech 2027, IEM Kolkata) focused on power systems and solar PV. Open to Graduate Engineer Trainee roles.">
+<meta name="author" content="Sagnik Kumar Nath">
+<meta name="theme-color" content="#1F3A5F">
+<meta property="og:title" content="Sagnik Kumar Nath · Electrical Engineer">
+<meta property="og:description" content="Electrical Engineer (B.Tech 2027) · Power Systems & Solar PV · Kolkata">
+<meta property="og:url" content="https://sagniknath.in/">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://sagniknath.in/assets/sagnik.jpg">
+<link rel="canonical" href="https://sagniknath.in/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3A5F'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23ffffff'%3ESN%3C/text%3E%3Ccircle cx='50' cy='14' r='5' fill='%23E8950C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --bg2:#f5f7fa; --ink:#14202f; --muted:#556275; --line:#e2e7ee;
+  --navy:#1F3A5F; --navy-ink:#ffffff; --amber:#c97a00; --chip:#eef2f7;
+  --link:#1F3A5F;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1520; --bg2:#121c2a; --ink:#e8edf4; --muted:#9aa8ba; --line:#223047;
+    --navy:#8fb3e0; --navy-ink:#0d1520; --amber:#f2a93b; --chip:#18253a; --link:#9cc0ec;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1520; --bg2:#121c2a; --ink:#e8edf4; --muted:#9aa8ba; --line:#223047;
+  --navy:#8fb3e0; --navy-ink:#0d1520; --amber:#f2a93b; --chip:#18253a; --link:#9cc0ec;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;font-weight:500;letter-spacing:.02em}
+.wrap{max-width:920px;margin:0 auto;padding:0 16px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:8px}
+.brand{font-weight:700;text-decoration:none;color:var(--ink);letter-spacing:-.01em;white-space:nowrap}
+.brand b{color:var(--amber)}
+.links{display:flex;gap:2px;align-items:center}
+.links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:14px;padding:6px 9px;border-radius:7px}
+.links a:hover{color:var(--ink);background:var(--chip)}
+#theme{border:1px solid var(--line);background:var(--bg);color:var(--ink);width:34px;height:34px;border-radius:8px;cursor:pointer;display:grid;place-items:center;margin-left:4px;flex:none}
+#theme svg{width:16px;height:16px}
+
+/* hero */
+.hero{padding:64px 0 52px}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.eyebrow{font-size:12.5px;color:var(--amber);text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1;letter-spacing:-.025em;font-weight:700;margin:10px 0 12px;color:var(--ink)}
+.tagline{font-size:15px;color:var(--navy);font-weight:600;margin-bottom:14px}
+.lead{font-size:clamp(16.5px,2.2vw,19px);color:var(--muted);max-width:600px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-height:44px}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.btn svg{width:17px;height:17px;flex:none}
+.avatar{width:168px;height:168px;border-radius:24px;background:var(--navy);display:grid;place-items:center;position:relative;overflow:hidden}
+.avatar span{font-size:58px;font-weight:700;color:var(--navy-ink);letter-spacing:-.03em}
+
+.avatar picture,.avatar img{display:block;width:100%;height:100%;object-fit:cover}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14px;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:#1f9d6b;display:block;box-shadow:0 0 0 4px color-mix(in srgb,#1f9d6b 20%,transparent)}
+
+/* sections */
+section{padding:48px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--bg2)}
+h2{font-size:12.5px;text-transform:uppercase;color:var(--amber);margin-bottom:20px}
+h2.mono{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace}
+.about p{font-size:17px;max-width:700px}
+.about ul{list-style:none;margin-top:16px;display:grid;gap:8px;max-width:700px}
+.about li{padding-left:22px;position:relative}
+.about li::before{content:"";position:absolute;left:3px;top:.68em;width:8px;height:2px;background:var(--amber)}
+
+/* timeline */
+.row{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.row:first-of-type{padding-top:0}
+.row:last-child{border-bottom:0;padding-bottom:0}
+.when{color:var(--muted);font-size:13px;padding-top:3px}
+.row h3{font-size:17.5px;letter-spacing:-.01em;font-weight:600}
+.org{color:var(--navy);font-weight:500;font-size:15px}
+.pts{list-style:none;margin-top:8px;display:grid;gap:5px}
+.pts li{padding-left:18px;position:relative;font-size:15px;color:var(--ink)}
+.pts li::before{content:"";position:absolute;left:2px;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--muted)}
+
+/* cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+.card.wide{grid-column:1/-1}
+.card .kicker{font-size:12px;color:var(--muted);text-transform:uppercase;margin-bottom:6px}
+.card h3{font-size:19px;letter-spacing:-.015em;line-height:1.3;margin-bottom:8px;font-weight:600}
+.card p{font-size:15px;margin-bottom:10px}
+.card .pts{margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.chip{font-size:12.5px;font-weight:500;background:var(--chip);color:var(--muted);padding:3px 9px;border-radius:6px}
+.card .cta{margin-top:14px}
+.card .btn{font-size:14px;padding:8px 14px;min-height:40px}
+.badge{display:inline-block;font-size:11.5px;padding:2px 8px;border-radius:5px;border:1px solid var(--amber);color:var(--amber);margin-left:6px;vertical-align:2px;text-transform:uppercase}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skills h3{font-size:15.5px;margin-bottom:10px;font-weight:600}
+.skills ul{list-style:none;display:grid;gap:6px}
+.skills li{font-size:15px;padding-left:16px;position:relative}
+.skills li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:2px;background:var(--amber)}
+
+/* certs */
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cert{display:flex;flex-direction:column;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 15px}
+.cert b{font-weight:600;font-size:15px;line-height:1.35}
+.cert span{color:var(--muted);font-size:13px}
+
+/* contact */
+.contact{background:var(--navy);color:var(--navy-ink);border-radius:18px;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.contact h3{font-size:clamp(23px,3.5vw,30px);letter-spacing:-.02em;line-height:1.25;max-width:440px;font-weight:600}
+.contact p{opacity:.8;margin-top:8px;font-size:15px}
+.contact .btn{background:var(--navy-ink);color:var(--navy);border-color:var(--navy-ink)}
+.contact .btn.ghost{background:transparent;color:var(--navy-ink);border-color:color-mix(in srgb,var(--navy-ink) 40%,transparent)}
+footer{padding:26px 0 36px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:760px){
+  .links a.hide-sm{display:none}
+  .hero{padding:40px 0 40px}
+  .hero-grid{grid-template-columns:1fr}
+  .avatar{width:84px;height:84px;border-radius:16px;order:-1}
+  .avatar span{font-size:30px}
+  .cards,.certs,.skills{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:2px}
+  .contact{padding:26px}
+  .card{padding:18px}
+  .cta .btn{flex:1 1 auto;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Sagnik Kumar Nath<b>.</b></a>
+    <div class="links">
+      <a class="hide-sm" href="#experience">Experience</a>
+      <a class="hide-sm" href="#projects">Projects</a>
+      <a class="hide-sm" href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Switch between light and dark theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow mono">Portfolio</div>
+        <h1>Sagnik Kumar Nath</h1>
+        <div class="tagline">Electrical Engineer (B.Tech 2027) · Power Systems &amp; Solar PV · Kolkata</div>
+        <p class="lead">Final-year EE student building toward a career in solar and power systems, from module plants and grid-connected PV to electrical design.</p>
+        <div class="cta">
+          <a class="btn primary" href="Sagnik_Kumar_Nath_CV.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download CV (PDF)</a>
+          <a class="btn" href="https://www.linkedin.com/in/sagnikkumarnath/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5z"/></svg>LinkedIn</a>
+          <a class="btn" href="mailto:sagniknath422004@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+          <a class="btn" href="https://github.com/sagnikvolt" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>
+        </div>
+        <div class="status"><i aria-hidden="true"></i>Open to Graduate Engineer Trainee roles in solar, renewables and power systems</div>
+      </div>
+      <div class="avatar"><picture><source srcset="assets/sagnik.webp" type="image/webp"><img src="assets/sagnik.jpg" width="168" height="168" alt="Portrait of Sagnik Kumar Nath" fetchpriority="high"></picture></div>
+    </div>
+  </header>
+
+  <section class="about alt" id="about">
+    <div class="wrap">
+      <h2 class="mono">About</h2>
+      <p>Final-year B.Tech Electrical Engineering student at the Institute of Engineering &amp; Management (IEM), Kolkata. CGPA 8.76, graduating in 2027.</p>
+      <ul>
+        <li>Electrical testing and calibration in NABL-accredited Government of India labs at National Test House.</li>
+        <li>Safety and regulatory documentation as an industrial trainee at ONGC.</li>
+        <li>Built SunSense, a rooftop solar sizing and payback tool for Indian homes, deployed on AWS.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2 class="mono">Experience</h2>
+      <div class="row">
+        <div class="when mono">Sep 2026</div>
+        <div>
+          <h3>Engineering Intern, Electrical Laboratory</h3>
+          <div class="org">National Test House (ER), Govt. of India · Kolkata</div>
+          <ul class="pts">
+            <li>Rotated through NABL-accredited Electro-Technical Calibration, Thermal Calibration and Electrical Testing labs.</li>
+            <li>Observed test and calibration procedures for electrical instruments against national standards, including EV and battery-cell testing at the Alipore facility.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when mono">May – Jun 2026</div>
+        <div>
+          <h3>Industrial Trainee</h3>
+          <div class="org">ONGC, MBA Basin · Kolkata</div>
+          <ul class="pts">
+            <li>Reviewed DGMS and OISD safety and regulatory documentation and flagged citation inconsistencies.</li>
+            <li>Prepared compliance reports with cross-functional engineering teams.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="alt">
+    <div class="wrap">
+      <h2 class="mono">Projects</h2>
+      <div class="cards">
+        <article class="card wide">
+          <div class="kicker mono">WeMakeDevs × AWS Environmental Hacks · Oct 2026</div>
+          <h3>SunSense: rooftop solar sizing and payback calculator</h3>
+          <p>Enter a location, monthly units or bill, and roof area. SunSense returns the system size in kW, yearly generation, cost before and after the PM Surya Ghar subsidy, savings, payback and CO₂ saved, for any home in India.</p>
+          <ul class="pts">
+            <li>Roof-specific simulation using PVGIS and NASA POWER solar data; results cross-checked against the official PVGIS tool.</li>
+            <li>State electricity tariffs from official board orders, plus a 25-year grid-versus-solar comparison.</li>
+            <li>Serverless backend on AWS Lambda, API Gateway and S3. Led a 4-person team; built the app and AWS backend.</li>
+          </ul>
+          <div class="chips"><span class="chip">PVGIS</span><span class="chip">NASA POWER</span><span class="chip">Python</span><span class="chip">AWS</span><span class="chip">PM Surya Ghar</span></div>
+          <div class="cta">
+            <a class="btn primary" href="https://sagnikvolt.github.io/SunSense/" target="_blank" rel="noopener">Live app ↗</a>
+            <a class="btn" href="https://github.com/sagnikvolt/SunSense" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="kicker mono">Solar PV design</div>
+          <h3>Rooftop Solar PV System Design: 2.75 kWp, grid-connected</h3>
+          <p>System sizing with a yield of about 3,900 kWh per year (PVGIS), plus shading, irradiation and payback analysis.</p>
+          <div class="chips"><span class="chip">PV sizing</span><span class="chip">PVGIS</span><span class="chip">Payback analysis</span></div>
+        </article>
+
+        <article class="card">
+          <div class="kicker mono">Control systems · Research</div>
+          <h3>Battery-Constrained MPC for Adaptive Cruise Control in EVs <span class="badge mono">In prep</span></h3>
+          <p>Model Predictive Control with battery-degradation constraints and Kalman-filter state estimation in MATLAB, with a web-based simulation platform. Paper in preparation.</p>
+          <div class="chips"><span class="chip">MATLAB</span><span class="chip">MPC</span><span class="chip">Kalman filter</span><span class="chip">EV</span></div>
+        </article>
+
+        <article class="card wide">
+          <div class="kicker mono">Other builds</div>
+          <ul class="pts">
+            <li><b>Real-time anaesthesia monitoring system:</b> sensor-based vital-sign monitoring with alerts.</li>
+            <li><b>Wi-Fi controlled mecanum-wheel robot.</b></li>
+          </ul>
+          <div class="chips"><span class="chip">Sensors</span><span class="chip">Embedded</span><span class="chip">Robotics</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2 class="mono">Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Power &amp; electrical</h3>
+          <ul>
+            <li>Power system fundamentals: per-unit, load flow, faults</li>
+            <li>Transformers, machines, motor control</li>
+            <li>Switchgear and protection: relays, CT/PT, breakers</li>
+            <li>Generation and distribution</li>
+            <li>Earthing</li>
+            <li>Electrical testing and calibration</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Solar &amp; renewables</h3>
+          <ul>
+            <li>PV system sizing, yield and payback (PVGIS)</li>
+            <li>Grid-connected rooftop systems</li>
+            <li>Net metering</li>
+            <li>PM Surya Ghar scheme</li>
+            <li>ALMM / DCR policy awareness</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>MATLAB / Simulink</li>
+            <li>AutoCAD (basic 2D)</li>
+            <li>MS Excel, Word, PowerPoint</li>
+            <li>LaTeX (Overleaf)</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="alt">
+    <div class="wrap">
+      <h2 class="mono">Certifications</h2>
+      <div class="certs">
+        <div class="cert"><b>Basics of Electrical Protection System</b><span>L&amp;T EduTech · Coursera · Sep 2026</span></div>
+        <div class="cert"><b>Power Plant Electrical Systems &amp; Generator Fundamentals</b><span>L&amp;T EduTech · Coursera · Sep 2026</span></div>
+        <div class="cert"><b>Electrical Power Generation – An Industrial Outlook</b><span>L&amp;T EduTech · Coursera · Sep 2026</span></div>
+        <div class="cert"><b>Electrical Power Distribution</b><span>L&amp;T EduTech · Coursera · Sep 2026</span></div>
+        <div class="cert"><b>Motors and Motor Control Circuits</b><span>University of Colorado Boulder · Coursera</span></div>
+        <div class="cert"><b>Solar Energy Basics</b><span>SUNY · Coursera</span></div>
+        <div class="cert"><b>AutoCAD for Beginners</b><span>Coursera project</span></div>
+        <div class="cert"><b>CAEV Program</b><span>JSW MG Motor · Skill-Lync</span></div>
+        <div class="cert"><b>Solar Photovoltaic System Design</b><span>NPTEL · IIT Roorkee · exam Oct 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="wrap">
+      <h2 class="mono">Activities</h2>
+      <div class="row">
+        <div class="when mono">2027</div>
+        <div><h3>GATE, Electrical Engineering</h3><div class="org">Registered</div></div>
+      </div>
+      <div class="row">
+        <div class="when mono">Oct 2026</div>
+        <div><h3>Team lead, SunSense</h3><div class="org">WeMakeDevs × AWS Environmental Hacks · Waste &amp; Energy track</div></div>
+      </div>
+      <div class="row">
+        <div class="when mono">Aug 2026</div>
+        <div><h3>Co-organiser, Aarambh 2.0</h3><div class="org">IEEE Student Branch, IEM Kolkata · IEEE Student Member and IEEE IAS member</div></div>
+      </div>
+      <div class="row">
+        <div class="when mono">2025</div>
+        <div><h3>Participant, Bharatiya Antariksh Hackathon</h3><div class="org">ISRO</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h3>Hiring for solar, renewables or power roles?</h3>
+          <p>Based in Kolkata, West Bengal. Open to relocation for GET roles.</p>
+        </div>
+        <div class="cta" style="margin-top:0">
+          <a class="btn" href="mailto:sagniknath422004@gmail.com">sagniknath422004@gmail.com</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/sagnikkumarnath/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <footer>
+        <span>© 2026 Sagnik Kumar Nath</span>
+        <span class="mono">sagniknath.in</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme'), saved=null;
+  try{saved=localStorage.getItem('theme')}catch(e){}
+  if(saved==='light'||saved==='dark') root.setAttribute('data-theme',saved);
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur?cur==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
